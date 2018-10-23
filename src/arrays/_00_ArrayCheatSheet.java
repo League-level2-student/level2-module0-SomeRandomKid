@@ -25,14 +25,10 @@ public class _00_ArrayCheatSheet {
 
 		//7. use a for loop to make every value of the integer array a random number
 		for (int j = 1; j < dank.length; j++) {
-			if (dank[j] < smallest) {
-				System.out.println(smallest);
-			}
-			else {
 			Random meme = new Random();
 			dank[j] = meme.nextInt(50);
 			System.out.println(dank[j]);
-			}
+			
 			}
 		//8. without printing the entire array, print only the smallest number in the array
 		 
