@@ -22,14 +22,26 @@ public class _00_ArrayCheatSheet {
 		//6. make an array of 50 integers
 		int[] dank = new int[50];
 		int smallest = dank[0];
-
+		int biggest = dank[0];
+		Random meme = new Random();
 		//7. use a for loop to make every value of the integer array a random number
-		for (int j = 1; j < dank.length; j++) {
-			Random meme = new Random();
+		for (int j = 0; j < dank.length; j++) {
 			dank[j] = meme.nextInt(50);
 			System.out.println(dank[j]);
-			
+		}
+		for (int k = 0; k < dank.length; k++) {
+			if (smallest > dank[k]) {
+				smallest = dank[k]; 
 			}
+			if (biggest < dank[k]) {
+				biggest = dank[k];
+			}
+		}
+		System.out.println("smallest " + smallest);
+		System.out.println("biggest " + biggest);
+		
+		
+
 		//8. without printing the entire array, print only the smallest number in the array
 		 
 		//9 print the entire array to see if step 8 was correct
